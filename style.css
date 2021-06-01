@@ -51,3 +51,65 @@ table {
 }
 /*#endregion*/
 
+:root {
+    --gray-bg-color: rgb(247, 248, 248);
+}
+
+
+.navbar {
+    height: 48px;
+    width: 100%;
+    background: blue;
+}
+
+.hero {
+    height: 877px;
+    width: 100%;
+    background:coral;
+}
+
+.pop-articles {
+    height: 232px;
+    width: 100%;
+    background: var(--gray-bg-color);
+    padding: 64px 0;
+}
+
+.latest-stories {
+    height: 781px;
+    width: 100%;
+    background: cyan;
+    padding: 112px 0;
+}
+
+.explore-channels {
+    height: 369px;
+    width: 100%;
+    background: var(--gray-bg-color);
+    padding: 112px 0;
+}
+
+.newsletter {
+    height: 360px;
+    width: 100%;
+    background:rgb(13, 175, 99);
+}
+
+.youtube {
+    height: 792px;
+    width: 100%;
+    background:var(--gray-bg-color);
+    padding: 112px 0;
+}
+
+.careers {
+    height: 608px;
+    width: 100%;
+    background:burlywood;
+}
+
+.footer {
+    height: 485px;
+    width: 100%;
+    background: black;
+}
