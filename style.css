@@ -55,7 +55,7 @@ table {
     --gray-bg-color: rgb(247, 248, 248);
 }
 
-
+/*#region Navbar*/
 .navbar{
     height: 48px;
     width: 100%;
@@ -79,20 +79,84 @@ table {
 .navbar .material-icons {
     padding-right: 1rem;
 }
+/*#endregion*/
 
-
+/*#region Hero */
 .hero {
     height: 877px;
     width: 100%;
-    background:coral;
+    background:#fff;
+}
+.hero .hero-head {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
 }
 
+.hero .hero-logo {
+    height: 49px;
+}
+
+.hero .hero-grid {
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 1041px;
+    height: 632px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.hero .hero-grid .hero-story-1{
+    background: chartreuse;
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+}
+
+.hero .hero-grid .hero-story-2{
+    background: red;
+    grid-column: 1 / 5;
+    grid-row: 4 / 6;
+}
+
+.hero .hero-grid .hero-story-3{
+    background: blue;
+    grid-column: 5 / 7;
+    grid-row: 1 / span 2;
+}
+
+.hero .hero-grid .hero-story-4{
+    background: blueviolet;
+    grid-column: 7 / span 2;
+    grid-row: 1/ span 2;
+    
+}
+
+.hero .hero-grid .hero-story-5{
+    background: orange;
+    grid-column: 5 / span 4;
+    grid-row: span 3;
+
+    
+}
+
+
+
+/*#endregion*/
+
+/*#region Pop Articles*/
 .pop-articles {
     height: 232px;
     width: 100%;
     background: var(--gray-bg-color);
     padding: 64px 0;
 }
+/*#endregion*/
 
 .latest-stories {
     height: 781px;
