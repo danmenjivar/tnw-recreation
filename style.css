@@ -108,7 +108,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    width: 1041px;
+    width: 1440px;
     height: 632px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -144,8 +144,6 @@ table {
     background: orange;
     grid-column: 5 / span 4;
     grid-row: span 3;
-
-    
 }
 
 
@@ -199,7 +197,6 @@ table {
 .pop-articles ul li p {
     font-size: 20px;
 }
-
 /*#endregion*/
 
 .latest-stories {
@@ -244,7 +241,82 @@ table {
 @media only screen and (max-width: 1023px){
     .navbar {
         background: pink;
+        height: 56px;
     }
+
+    .hero {
+        height: fit-content;
+        margin-bottom: 8%;
+    }
+
+    .hero .hero-logo {
+        height: 32px;
+    }
+
+    .hero .hero-head {
+        flex-direction: column;
+
+        margin-top: 10%;
+     
+        display: flex;
+        row-gap: 15px;
+        align-items: center;
+        font-size: 30px;
+
+    }
+
+    .hero .hero-grid {
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: 640px;
+        height: 824px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .hero .hero-grid .hero-story-1{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+    
+    .hero .hero-grid .hero-story-2{
+        grid-column: 1 / span 1;
+        grid-row: 3 / 4;
+    }
+    
+    .hero .hero-grid .hero-story-3{
+        grid-column: 2 / span 1;
+        grid-row: 3 / 4;
+    }
+    
+    .hero .hero-grid .hero-story-4{
+        grid-column: 1 / span 1;
+        grid-row: 4 / 5;
+    }
+    
+    .hero .hero-grid .hero-story-5{
+        grid-column: 2 / span 1;
+        grid-row: 4 / 5;
+    }
+
+    .pop-articles {
+        height: fit-content;
+    }
+
+    .pop-articles ul  {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 30px;
+    }
+
+
+
+    
 }
 
 @media only screen and (max-width: 767px){
