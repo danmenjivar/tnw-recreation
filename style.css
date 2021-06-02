@@ -56,11 +56,30 @@ table {
 }
 
 
-.navbar {
+.navbar{
     height: 48px;
     width: 100%;
-    background: blue;
+    background: #F7F8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+.navbar .nav__logo svg {
+    padding-left: 1rem;
+    height: 16px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.navbar .material-icons {
+    padding-right: 1rem;
+}
+
 
 .hero {
     height: 877px;
@@ -112,4 +131,22 @@ table {
     height: 485px;
     width: 100%;
     background: black;
+}
+
+@media only screen and (max-width: 1023px){
+    .navbar {
+        background: pink;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar {
+        background: yellow;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .navbar {
+        background: green;
+    }
 }
