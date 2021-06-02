@@ -206,6 +206,20 @@ table {
     padding: 112px 0;
 }
 
+.stories-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.latest-stories .story {
+    background: yellow;
+    height: 258px;
+    width: 216px;
+    margin: 16px;
+}
+
+
 .explore-channels {
     height: 369px;
     width: 100%;
@@ -314,14 +328,20 @@ table {
         row-gap: 30px;
     }
 
-
-
-    
+    .stories-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 @media only screen and (max-width: 767px){
     .navbar {
         background: yellow;
+    }
+
+    .stories-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
     }
 }
 
