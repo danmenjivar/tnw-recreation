@@ -57,6 +57,9 @@ table {
 
 /*#region Navbar*/
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 48px;
     width: 100%;
     background: #F7F8F8;
@@ -156,6 +159,47 @@ table {
     background: var(--gray-bg-color);
     padding: 64px 0;
 }
+
+
+.pop-articles h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.pop-articles h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+
+}
+
+.pop-articles ul  {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 945px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+}
+
+.pop-articles ul li {
+    display: block;
+}
+
+.pop-articles ul li h2 {
+    font-size: 30px;
+    float: left;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.pop-articles ul li p {
+    font-size: 20px;
+}
+
 /*#endregion*/
 
 .latest-stories {
